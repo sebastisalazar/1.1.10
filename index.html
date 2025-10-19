@@ -46,17 +46,17 @@
 <div id="formulario2">
 
     <fieldset>
-        <legend>Registrar robo</legend>
+        <legend>Registro robo</legend>
         <form action="#" method="post">
             <label for="date">Fecha</label>
-                <input type="date" name="fecha" id="fecha">
+                <input type="date" name="fecha" id="fecha" tabindex="12" autofocus>
             <label for="hora">Hora</label>
-                <input type="time" name="hora" id="hora">
+                <input type="time" name="hora" id="hora" tabindex="13" autofocus>
             <label for="color">Color</label>
-                <input type="color">
+                <input type="color" tabindex="14" autofocus>
             
             <label for="tipobici">Tipo de bicicleta</label>
-            <select name="tipobici" id="tipobici">
+            <select name="tipobici" id="tipobici" tabindex="15" autofocus>
                 <optgroup label="Urbana">
                     <option value="clasica"> Bicicleta Clasica</option>
                     <option value="plegable">Bicicleta Plegable</option>
@@ -75,7 +75,7 @@
                 </optgroup>
             </select>
             <label for="accesorios">Accesorios</label>
-            <select name="accesorios" id="accesorios" multiple>
+            <select name="accesorios" id="accesorios" multiple tabindex="16" autofocus>
                 <option value="Ruedines">Ruedines</option>
                 <option value="Hinchadores">Hinchadores</option>
                 <option value="Rodillos">Rodillos</option>
@@ -84,7 +84,7 @@
             </select>
 
             <label for="marca">¿Qué marca era?</label>
-            <input list="marcas" id="marca" name="marcas" />
+            <input list="marcas" id="marca" name="marcas" tabindex="17" autofocus />
             <datalist id="marcas">
                 <option value="specialized">
                 <option value="trek">
@@ -104,11 +104,8 @@
                 <option value="argon">
             </datalist>
 
-            <input type="reset" name="reset" id="submit" tabindex="10" value="Borrar todo" autofocus> 
-            <input type="submit" name="submit" id="submit" tabindex="11" value="Enviar" autofocus>
-
-
-
+            <input type="reset" name="reset" id="submit" tabindex="18" value="Borrar todo" autofocus> 
+            <input type="submit" name="submit" id="submit" tabindex="19" value="Enviar" autofocus>
 
         </form>
 
