@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<div id="formulario1">
+  <fieldset>
+    <legend>Registro Club</legend>
+        <form id="registro" action="#" method="post">
+            <h2>Datos de personales</h2>
+            <label for="nombre" >Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduce solo tu nombre" tabindex="1" autofocus>
+            <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Introduce solo tus apellidos" tabindex="2" autofocus>
+            <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" placeholder="Introduce solo numeros" tabindex="3" autofocus>
+            <p>Sexo</p>
+                <label for="sexo" >Hombre</label>
+                <input type="radio" id="sexo" name="sexo" value="Hombre" tabindex="4" autofocus>
+                <label for="sexo">Mujer</label >
+                <input type="radio" id="sexo" name="sexo" value="Mujer" tabindex="5" autofocus>
+            <label for="delclub">Me siento del club</label>
+                <input type="checkbox" name="delclub" value="si" tabindex="6" autofocus>
+            <label for="sobreti">Escribe algo sobre ti</label>
+                <textarea name="sobreti" id="sobreti" placeholder="Introduce solo texto" tabindex="7" autofocus rows="4" cols="50"></textarea>
+            <h2>Datos de contacto</h2>
+                <label for="email" id="email">Correco Electronico</label>
+                <input type="email" name="email" id="email" placeholder="Introduce un email valido" tabindex="8" autofocus>
+            <label for="tel">Número de Teléfono</label>
+            <input type="tel" name="tel" id="tel" tabindex="9" autofocus>
+            <input type="reset" name="reset" id="submit" tabindex="10" value="Borrar todo" autofocus> 
+            <input type="submit" name="submit" id="submit" tabindex="11" value="Enviar" autofocus>
+            
+        </form>
+  </fieldset>
+
+
+</div>
+
+<div id="formulario2">
+
+    <fieldset>
+        <legend>Registrar robo</legend>
+        <form action="#" method="post">
+            <label for="date">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+            <label for="hora">Hora</label>
+                <input type="time" name="hora" id="hora">
+            <label for="color">Color</label>
+                <input type="color">
+            
+            <label for="tipobici">Tipo de bicicleta</label>
+            <select name="tipobici" id="tipobici">
+                <optgroup label="Urbana">
+                    <option value="clasica"> Bicicleta Clasica</option>
+                    <option value="plegable">Bicicleta Plegable</option>
+                    <option value="electrica">Bicicleta Electrica</option>
+                    <option value="commuter"> Bicicleta Commuter</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option value="montana">Bicicletas de tipo Sport</option>
+                    <option value="plegable"> Bicicletas de tipo Trail o Hard Tail</option>
+                    <option value="electrica">Bicicletas para XC o Cross Country</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option value="montana">Bicicletas Gran Fondo</option>
+                    <option value="plegable"> Bicicletas Racing</option>
+                    <option value="electrica">Bicicletas Aero</option>
+                </optgroup>
+            </select>
+            <label for="accesorios">Accesorios</label>
+            <select name="accesorios" id="accesorios" multiple>
+                <option value="Ruedines">Ruedines</option>
+                <option value="Hinchadores">Hinchadores</option>
+                <option value="Rodillos">Rodillos</option>
+                <option value="Alforja">Alforja</option>
+                <option value="Sillabebe">Silla portabebés</option>
+            </select>
+
+            <label for="marca">¿Qué marca era?</label>
+            <input list="marcas" id="marca" name="marcas" />
+            <datalist id="marcas">
+                <option value="specialized">
+                <option value="trek">
+                <option value="merida">
+                <option value="cube">
+                <option value="orbea">
+                <option value="cannondale">
+                <option value="canyon">
+                <option value="protek">
+                <option value="megamo">
+                <option value="pinarello">
+                <option value="bianchi">
+                <option value="bh">
+                <option value="factor">
+                <option value="ghost">
+                <option value="cervelo">
+                <option value="argon">
+            </datalist>
+
+            <input type="reset" name="reset" id="submit" tabindex="10" value="Borrar todo" autofocus> 
+            <input type="submit" name="submit" id="submit" tabindex="11" value="Enviar" autofocus>
+
+
+
+
+        </form>
+
+
+    </fieldset>
+
+
+</div>
+
+    
+</body>
+</html>
